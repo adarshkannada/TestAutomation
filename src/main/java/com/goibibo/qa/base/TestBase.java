@@ -25,7 +25,7 @@ public class TestBase {
 			if(System.getProperty("os.name").equals("Linux"))
 			{
 			prop = new Properties();
-			FileInputStream config = new FileInputStream("C:\\Users\\HP\\eclipse-workspace\\TestAutomation\\src\\main\\java\\com\\goibibo\\qa\\config\\configL.properties");
+			FileInputStream config = new FileInputStream("/home/freedom/Documents/eclipse/TestAutomation/src/main/java/com/goibibo/qa/config/configL.properties");
 			prop.load(config);
 			}
 			else if(System.getProperty("os.name").equals("Windows 10"))
