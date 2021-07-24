@@ -24,6 +24,7 @@ public class DashboardTest extends TestBase{
 	@BeforeMethod
 	public void setUp() throws IOException, InterruptedException {
 		initialize();
+		
 		dashboard = new Dashboard();
 	}
 	

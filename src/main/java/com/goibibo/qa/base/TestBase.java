@@ -16,12 +16,25 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
 	
+	
+	
 	public TestBase() throws IOException{
-		
+
 		try {
+			
+			if(System.getProperty("os.name").equals("Linux"))
+			{
 			prop = new Properties();
-			FileInputStream config = new FileInputStream("/home/freedom/Documents/Selenium/GoIbibioTest/src/main/java/com/goibibo/qa/config/config.properties");
+			FileInputStream config = new FileInputStream("C:\\Users\\HP\\eclipse-workspace\\TestAutomation\\src\\main\\java\\com\\goibibo\\qa\\config\\configL.properties");
 			prop.load(config);
+			}
+			else if(System.getProperty("os.name").equals("Windows 10"))
+			{
+				prop = new Properties();
+				FileInputStream config = new FileInputStream("C:\\Users\\HP\\eclipse-workspace\\TestAutomation\\src\\main\\java\\com\\goibibo\\qa\\config\\config.properties");
+				prop.load(config);
+			}
+				
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -30,6 +43,8 @@ public class TestBase {
 		}		
 	}
 	
+
+
 	public static void initialize() throws InterruptedException {
 			String browserName = prop.getProperty("browserName");
 		
