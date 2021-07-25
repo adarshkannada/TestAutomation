@@ -31,6 +31,7 @@ public class DashboardTest extends TestBase{
 	@Test(priority=1)
 	public void clickAboutUsPageLinkTest() throws IOException {
 		aboutUs = dashboard.verifyAboutUsLink();
+		
 	}
 	
 	@AfterMethod
