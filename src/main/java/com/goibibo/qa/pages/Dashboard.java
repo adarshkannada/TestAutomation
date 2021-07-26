@@ -30,9 +30,8 @@ public class Dashboard extends TestBase{
 	}
 	
 	public AboutUs verifyAboutUsLink() throws IOException {
-		Actions act = new Actions(driver);
-		act.moveToElement(aboutUsLink);
-		act.click().perform();
+		
+		aboutUsLink.click();
 		return new AboutUs();
 		//.scrollPageUntil(aboutUsLink, driver);
 		//aboutUsLink.click();
