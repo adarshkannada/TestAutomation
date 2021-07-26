@@ -33,6 +33,11 @@ public class AboutUsTest extends TestBase{
 		aboutUs.closeLoginWindow();
 	}
 	
+	@Test
+	public void clickHotelsLinkTest() {
+		aboutUs.clickHotelsLink();
+	}
+	
 	
 	@AfterMethod
 	public void tearDown() {
