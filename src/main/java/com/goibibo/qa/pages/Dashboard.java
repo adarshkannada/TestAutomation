@@ -20,6 +20,9 @@ public class Dashboard extends TestBase{
 	@FindBy(xpath="//a[text()='About Us']")
 	WebElement aboutUsLink;
 	
+	@FindBy(xpath="//a[text()='Careers']")
+	WebElement careersLink;
+	
 	public Dashboard() throws IOException {
 		super();
 		PageFactory.initElements(driver, this);
@@ -37,5 +40,11 @@ public class Dashboard extends TestBase{
 		//aboutUsLink.click();
 		
 	}
+	
+	public Careers verifyCareersLink() throws IOException {
+		careersLink.click();
+		return new Careers();
+	}
+	
 
 }
