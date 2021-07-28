@@ -15,7 +15,7 @@ public class Careers extends TestBase{
 	
 	WebDriverWait wait = new WebDriverWait(driver, 2);
 	
-	@FindBy(xpath="(//img[@alt='goibibo careers logo'])[2]")
+	@FindBy(xpath="(//img[@alt='goibibo careers logo'])[2]") //need to correct this xpath
 	WebElement goIbiboCareersLink;
 	
 
@@ -26,27 +26,17 @@ public class Careers extends TestBase{
 		
 	}
 	
-	public void verifyGoibiboPageLink() throws InterruptedException {
+	public void verifyGoibiboCareersPageLink() throws InterruptedException {
 		Thread.sleep(1000);
 		
-		
-		//Store the ID of the original window
-		String parentWindowHandle = driver.getWindowHandle();
+		String parentWindowHandle = driver.getWindowHandle(); //Store the ID of the original window
 		System.out.println(parentWindowHandle);
-
-		//Check we don't have other windows open already
-		//assert driver.getWindowHandles().size() == 1;
 		
-		//click on link that opens Link in new tab
-		//goIbiboCareersLink.click();
-				
-		//get the handles of all the windows that are currently open using the command
-		Set<String> allWindowHandles = driver.getWindowHandles();
+//		goIbiboCareersLink.click(); //click on some link on the newly opened tab
+		Set<String> allWindowHandles = driver.getWindowHandles(); //get the handles of all the windows that are currently open using the command
 		System.out.println(allWindowHandles);
 		
-		// Now iterate using Iterator
-		Iterator<String> checkAllWindows = allWindowHandles.iterator();
-		
+		Iterator<String> checkAllWindows = allWindowHandles.iterator(); // Now iterate using Iterator
 		while(checkAllWindows.hasNext()) {
 			String childWindow = checkAllWindows.next();
 			
@@ -58,7 +48,6 @@ public class Careers extends TestBase{
 		}
 		
 		driver.switchTo().window(parentWindowHandle);
-		
 		//return goIbiboCareersLink.isEnabled();
 	}
 	
