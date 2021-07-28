@@ -1,6 +1,8 @@
 package com.goibibo.qa.pages;
 
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.Set;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,38 +26,40 @@ public class Careers extends TestBase{
 		
 	}
 	
-	public boolean verifyGoibiboPageLink() throws InterruptedException {
+	public void verifyGoibiboPageLink() throws InterruptedException {
 		Thread.sleep(1000);
 		
 		
 		//Store the ID of the original window
-		String originalWindow = driver.getWindowHandle();
+		String parentWindowHandle = driver.getWindowHandle();
+		System.out.println(parentWindowHandle);
 
 		//Check we don't have other windows open already
-		assert driver.getWindowHandles().size() == 1;
+		//assert driver.getWindowHandles().size() == 1;
 		
 		//click on link that opens Link in new tab
-		goIbiboCareersLink.click();
+		//goIbiboCareersLink.click();
 				
-		//Wait for the new window or tab
-		wait.until(numberOfWindowsToBe(2));
+		//get the handles of all the windows that are currently open using the command
+		Set<String> allWindowHandles = driver.getWindowHandles();
+		System.out.println(allWindowHandles);
 		
-		//Loop through until we find a new window handle
-		for (String windowHandle : driver.getWindowHandles()) {
-		    if(!originalWindow.contentEquals(windowHandle)) {
-		        driver.switchTo().window(windowHandle);
-		        break;
-		    }
+		// Now iterate using Iterator
+		Iterator<String> checkAllWindows = allWindowHandles.iterator();
+		
+		while(checkAllWindows.hasNext()) {
+			String childWindow = checkAllWindows.next();
+			
+			if(!parentWindowHandle.equals(childWindow)) {
+				driver.switchTo().window(childWindow);
+				System.out.println(driver.switchTo().window(childWindow).getTitle());
+				driver.close();
+			}
 		}
-
-		//Wait for the new tab to finish loading content
-		wait.until(titleIs("Selenium documentation")
 		
+		driver.switchTo().window(parentWindowHandle);
 		
-		
-	
-		
-		return goIbiboCareersLink.isEnabled();
+		//return goIbiboCareersLink.isEnabled();
 	}
 	
 	
