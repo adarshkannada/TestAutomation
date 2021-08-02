@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-29T00:32:00 IST" name="Default suite" finished-at="2021-07-29T00:32:07 IST" duration-ms="7206">
+  <suite started-at="2021-08-02T23:34:27 IST" name="Default suite" finished-at="2021-08-02T23:34:36 IST" duration-ms="8874">
     <groups>
     </groups>
-    <test started-at="2021-07-29T00:32:00 IST" name="Default test" finished-at="2021-07-29T00:32:07 IST" duration-ms="7206">
+    <test started-at="2021-08-02T23:34:27 IST" name="Default test" finished-at="2021-08-02T23:34:36 IST" duration-ms="8874">
       <class name="com.goibibo.qa.testcases.CareersTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.goibibo.qa.testcases.CareersTest@1a04f701]" started-at="2021-07-29T00:32:00 IST" name="setup" finished-at="2021-07-29T00:32:05 IST" duration-ms="4840" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.goibibo.qa.testcases.CareersTest@58695725]" started-at="2021-08-02T23:34:27 IST" name="setup" finished-at="2021-08-02T23:34:32 IST" duration-ms="5198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GoibiboCareersLinkEnabledTest()[pri:1, instance:com.goibibo.qa.testcases.CareersTest@1a04f701]" started-at="2021-07-29T00:32:05 IST" name="GoibiboCareersLinkEnabledTest" finished-at="2021-07-29T00:32:07 IST" duration-ms="2270" status="PASS">
+        <test-method signature="GoibiboCareersLinkEnabledTest()[pri:1, instance:com.goibibo.qa.testcases.CareersTest@58695725]" started-at="2021-08-02T23:34:32 IST" name="GoibiboCareersLinkEnabledTest" finished-at="2021-08-02T23:34:35 IST" duration-ms="2983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoibiboCareersLinkEnabledTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goibibo.qa.testcases.CareersTest@1a04f701]" started-at="2021-07-29T00:32:07 IST" name="tearDown" finished-at="2021-07-29T00:32:07 IST" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goibibo.qa.testcases.CareersTest@58695725]" started-at="2021-08-02T23:34:35 IST" name="tearDown" finished-at="2021-08-02T23:34:36 IST" duration-ms="676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
