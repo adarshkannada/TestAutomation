@@ -15,12 +15,11 @@ public class Careers extends TestBase{
 	
 	WebDriverWait wait = new WebDriverWait(driver, 2);
 	
-	@FindBy(xpath="(//img[@alt='goibibo careers logo'])[2]") //need to correct this xpath
-	WebElement goIbiboCareersLink;
+	@FindBy(xpath="//a[text()='Careers']") //older xpath-(//img[@alt='goibibo careers logo'])[2]
+	WebElement goIbiboCareersLink; 
 	
 
 	public Careers() throws IOException {
-		super();
 		PageFactory.initElements(driver,this);
 		driver.manage().window().maximize();
 		
