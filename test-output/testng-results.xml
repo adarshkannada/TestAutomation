@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-06T11:47:08 PDT" name="Default suite" finished-at="2021-08-06T11:47:10 PDT" duration-ms="2530">
+  <suite started-at="2021-08-07T00:38:45 IST" name="Default suite" finished-at="2021-08-07T00:38:45 IST" duration-ms="337">
     <groups>
     </groups>
-    <test started-at="2021-08-06T11:47:08 PDT" name="Default test" finished-at="2021-08-06T11:47:10 PDT" duration-ms="2530">
+    <test started-at="2021-08-07T00:38:45 IST" name="Default test" finished-at="2021-08-07T00:38:45 IST" duration-ms="337">
       <class name="com.goibibo.qa.testcases.GetDataTest">
-        <test-method signature="GetDataFromExcel()[pri:0, instance:com.goibibo.qa.testcases.GetDataTest@2cd2a21f]" started-at="2021-08-06T11:47:08 PDT" name="GetDataFromExcel" finished-at="2021-08-06T11:47:10 PDT" duration-ms="2369" status="PASS">
+        <test-method signature="GetDataFromExcel()[pri:0, instance:com.goibibo.qa.testcases.GetDataTest@1613674b]" started-at="2021-08-07T00:38:45 IST" name="GetDataFromExcel" finished-at="2021-08-07T00:38:45 IST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetDataFromExcel -->
