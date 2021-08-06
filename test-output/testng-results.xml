@@ -2,24 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-04T23:11:58 IST" name="Default suite" finished-at="2021-08-04T23:12:06 IST" duration-ms="8215">
+  <suite started-at="2021-08-06T11:47:08 PDT" name="Default suite" finished-at="2021-08-06T11:47:10 PDT" duration-ms="2530">
     <groups>
     </groups>
-    <test started-at="2021-08-04T23:11:58 IST" name="Default test" finished-at="2021-08-04T23:12:06 IST" duration-ms="8215">
-      <class name="com.goibibo.qa.testcases.CareersTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.goibibo.qa.testcases.CareersTest@58695725]" started-at="2021-08-04T23:11:58 IST" name="setup" finished-at="2021-08-04T23:12:04 IST" duration-ms="5964" status="PASS">
+    <test started-at="2021-08-06T11:47:08 PDT" name="Default test" finished-at="2021-08-06T11:47:10 PDT" duration-ms="2530">
+      <class name="com.goibibo.qa.testcases.GetDataTest">
+        <test-method signature="GetDataFromExcel()[pri:0, instance:com.goibibo.qa.testcases.GetDataTest@2cd2a21f]" started-at="2021-08-06T11:47:08 PDT" name="GetDataFromExcel" finished-at="2021-08-06T11:47:10 PDT" duration-ms="2369" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="GoibiboCareersLinkEnabledTest()[pri:1, instance:com.goibibo.qa.testcases.CareersTest@58695725]" started-at="2021-08-04T23:12:04 IST" name="GoibiboCareersLinkEnabledTest" finished-at="2021-08-04T23:12:06 IST" duration-ms="2156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GoibiboCareersLinkEnabledTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goibibo.qa.testcases.CareersTest@58695725]" started-at="2021-08-04T23:12:06 IST" name="tearDown" finished-at="2021-08-04T23:12:06 IST" duration-ms="75" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.goibibo.qa.testcases.CareersTest -->
+        </test-method> <!-- GetDataFromExcel -->
+      </class> <!-- com.goibibo.qa.testcases.GetDataTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

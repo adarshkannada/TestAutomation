@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.goibibo.qa.testcases.CareersTest">
+      <class name="com.goibibo.qa.testcases.GetDataTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="GoibiboCareersLinkEnabledTest"/>
+          <include name="GetDataFromExcel"/>
         </methods>
-      </class> <!-- com.goibibo.qa.testcases.CareersTest -->
+      </class> <!-- com.goibibo.qa.testcases.GetDataTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
