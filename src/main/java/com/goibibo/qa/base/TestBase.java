@@ -1,11 +1,15 @@
 package com.goibibo.qa.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -65,6 +69,17 @@ public class TestBase {
 			Thread.sleep(2000);
 
 			
+	}
+	
+	public static void TakeScreenshot() {
+		TakesScreenshot srcshot = ((TakesScreenshot)driver);
+		File src = srcshot.getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(src, null);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
