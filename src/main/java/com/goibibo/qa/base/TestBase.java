@@ -13,8 +13,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.goibibo.qa.utilties.TestUtil;
+import com.goibibo.qa.utilties.WebEventListener;
 
 public class TestBase {
 	public static WebDriver driver;
@@ -26,19 +28,9 @@ public class TestBase {
 
 		try {
 			
-			if(System.getProperty("os.name").equals("Linux"))
-			{
 			prop = new Properties();
-			FileInputStream config = new FileInputStream("/home/freedom/Documents/eclipse/TestAutomation/src/main/java/com/goibibo/qa/config/configL.properties");
+			FileInputStream config = new FileInputStream("C:\\Project\\TestAutomation\\src\\main\\java\\com\\goibibo\\qa\\config\\config.properties");
 			prop.load(config);
-			}
-			else if(System.getProperty("os.name").equals("Windows 10"))
-			{
-				prop = new Properties();
-				FileInputStream config = new FileInputStream("C:\\Users\\HP\\eclipse-workspace\\TestAutomation\\src\\main\\java\\com\\goibibo\\qa\\config\\config.properties");
-				prop.load(config);
-			}
-				
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -49,7 +41,7 @@ public class TestBase {
 	
 
 
-	public static void initialize() throws InterruptedException {
+	public static void initialize() throws InterruptedException, IOException {
 			String browserName = prop.getProperty("browserName");
 		
 			if(browserName.equals("chrome")) {
@@ -60,6 +52,14 @@ public class TestBase {
 			System.setProperty(prop.getProperty("geckoDriver"), prop.getProperty("geckoDriverPath"));
 			driver = new FirefoxDriver();
 		}
+			
+			EventFiringWebDriver eventDriver = new EventFiringWebDriver(driver);
+			//create object of eventListenerHandler to register it with EventFiringWebDriver
+			WebEventListener eventListener = new WebEventListener();
+			eventDriver.register(eventListener);
+			driver = eventDriver;
+			
+			
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
