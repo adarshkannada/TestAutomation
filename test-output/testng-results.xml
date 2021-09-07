@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-08T00:48:18 IST" name="Default suite" finished-at="2021-09-08T00:48:25 IST" duration-ms="7083">
+  <suite started-at="2021-09-08T00:51:32 IST" name="Default suite" finished-at="2021-09-08T00:51:40 IST" duration-ms="7191">
     <groups>
     </groups>
-    <test started-at="2021-09-08T00:48:18 IST" name="Default test" finished-at="2021-09-08T00:48:25 IST" duration-ms="7083">
+    <test started-at="2021-09-08T00:51:32 IST" name="Default test" finished-at="2021-09-08T00:51:40 IST" duration-ms="7191">
       <class name="com.goibibo.qa.testcases.DashboardTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.goibibo.qa.testcases.DashboardTest@3e6ef8ad]" started-at="2021-09-08T00:48:18 IST" name="setUp" finished-at="2021-09-08T00:48:23 IST" duration-ms="5071" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.goibibo.qa.testcases.DashboardTest@3e6ef8ad]" started-at="2021-09-08T00:51:32 IST" name="setUp" finished-at="2021-09-08T00:51:38 IST" duration-ms="5215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickAboutUsPageLinkTest()[pri:1, instance:com.goibibo.qa.testcases.DashboardTest@3e6ef8ad]" started-at="2021-09-08T00:48:23 IST" name="clickAboutUsPageLinkTest" finished-at="2021-09-08T00:48:25 IST" duration-ms="1390" status="PASS">
+        <test-method signature="clickAboutUsPageLinkTest()[pri:1, instance:com.goibibo.qa.testcases.DashboardTest@3e6ef8ad]" started-at="2021-09-08T00:51:38 IST" name="clickAboutUsPageLinkTest" finished-at="2021-09-08T00:51:39 IST" duration-ms="1125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickAboutUsPageLinkTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goibibo.qa.testcases.DashboardTest@3e6ef8ad]" started-at="2021-09-08T00:48:25 IST" name="tearDown" finished-at="2021-09-08T00:48:25 IST" duration-ms="603" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goibibo.qa.testcases.DashboardTest@3e6ef8ad]" started-at="2021-09-08T00:51:39 IST" name="tearDown" finished-at="2021-09-08T00:51:40 IST" duration-ms="830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
