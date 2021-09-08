@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.goibibo.qa.testcases.GetDataTest">
+      <class name="com.goibibo.qa.testcases.DashboardTest">
         <methods>
-          <include name="GetDataFromExcel"/>
+          <include name="clickAboutUsPageLinkTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.goibibo.qa.testcases.GetDataTest -->
+      </class> <!-- com.goibibo.qa.testcases.DashboardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
