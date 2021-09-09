@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="com.goibibo.qa.extentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="goIbibo Tests(failed)">
     <classes>
+      <class name="com.goibibo.qa.testcases.AboutUsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="clickHotelsLinkTest"/>
+          <include name="closeLoginWindowTest"/>
+        </methods>
+      </class> <!-- com.goibibo.qa.testcases.AboutUsTest -->
+      <class name="com.goibibo.qa.testcases.CareersTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="GoibiboCareersLinkEnabledTest"/>
+        </methods>
+      </class> <!-- com.goibibo.qa.testcases.CareersTest -->
       <class name="com.goibibo.qa.testcases.DashboardTest">
         <methods>
-          <include name="verifyDashboardHeadingLabelTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="clickAboutUsPageLinkTest"/>
         </methods>
       </class> <!-- com.goibibo.qa.testcases.DashboardTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- goIbibo Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -21,7 +21,7 @@ public class GetDataTest {
 			xlreader = new XLS_Reader("/home/freedom/Documents/eclipse/TestAutomation/src/main/java/com/goibibo/qa/testData/testData.xlsx");
 		}
 		else if(System.getProperty("os.name").equals("Windows 10")){
-				xlreader = new XLS_Reader("C:\\Users\\HP\\eclipse-workspace\\TestAutomation\\src\\main\\java\\com\\goibibo\\qa\\testData\\testData.xlsx");
+				xlreader = new XLS_Reader("C:\\Project\\TestAutomation\\src\\main\\java\\com\\goibibo\\qa\\testData\\testData.xlsx");
 			}
 		 
 		 
