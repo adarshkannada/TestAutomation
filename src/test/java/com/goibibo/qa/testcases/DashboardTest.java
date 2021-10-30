@@ -43,6 +43,12 @@ public class DashboardTest extends TestBase{
 		log.info("the power");
 	}
 	
+	@Test
+	public void verifyFromPlaceListTest() throws InterruptedException {
+		
+		dashboard.verifyFromPlace();
+	}
+	
 	
 	@AfterMethod
 	public void tearDown() {
