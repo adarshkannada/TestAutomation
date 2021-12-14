@@ -5,9 +5,9 @@
     <classes>
       <class name="com.goibibo.qa.testcases.DashboardTest">
         <methods>
-          <include name="clickAboutUsPageLinkTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="fromPlaceListTest"/>
         </methods>
       </class> <!-- com.goibibo.qa.testcases.DashboardTest -->
     </classes>

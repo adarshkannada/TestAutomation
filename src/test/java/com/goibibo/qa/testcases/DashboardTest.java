@@ -6,6 +6,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
@@ -43,10 +44,17 @@ public class DashboardTest extends TestBase{
 		log.info("the power");
 	}
 	
-	@Test
-	public void verifyFromPlaceListTest() throws InterruptedException {
+	@Test(priority=2)
+	@Parameters ({"fromPlaceListText"})
+	public void fromPlaceListTest(String fromPlaceNameText) throws InterruptedException {
 		
-		dashboard.verifyFromPlace();
+		dashboard.verifyFromPlace(fromPlaceNameText);
+		
+	}
+	
+	@Test(priority=3)
+	public void toPlaceNameTest() throws InterruptedException{
+		dashboard.verifyToPlace();
 	}
 	
 	

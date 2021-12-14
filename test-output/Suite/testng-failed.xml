@@ -5,27 +5,13 @@
     <listener class-name="com.goibibo.qa.extentReportListener.ExtentReportListener"/>
   </listeners>
   <test thread-count="5" name="goIbibo Tests(failed)">
+    <parameter name="fromPlaceListText" value="Mumbai"/>
     <classes>
-      <class name="com.goibibo.qa.testcases.AboutUsTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="clickHotelsLinkTest"/>
-          <include name="closeLoginWindowTest"/>
-        </methods>
-      </class> <!-- com.goibibo.qa.testcases.AboutUsTest -->
-      <class name="com.goibibo.qa.testcases.CareersTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="GoibiboCareersLinkEnabledTest"/>
-        </methods>
-      </class> <!-- com.goibibo.qa.testcases.CareersTest -->
       <class name="com.goibibo.qa.testcases.DashboardTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="clickAboutUsPageLinkTest"/>
+          <include name="fromPlaceListTest"/>
         </methods>
       </class> <!-- com.goibibo.qa.testcases.DashboardTest -->
     </classes>

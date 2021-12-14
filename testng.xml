@@ -3,15 +3,23 @@
 <suite name="Suite">
 
 	<listeners>
-		<listener class-name="com.goibibo.qa.extentReportListener.ExtentReportListener" />	
+		<listener
+			class-name="com.goibibo.qa.extentReportListener.ExtentReportListener" />
 	</listeners>
 
-  <test thread-count="5" name="goIbibo Tests">
-    <classes>
-      <class name="com.goibibo.qa.testcases.DashboardTest"/>
-      <class name="com.goibibo.qa.testcases.AboutUsTest"/>
-      <class name="com.goibibo.qa.testcases.CareersTest"/>
-      <class name="com.goibibo.qa.testcases.GetDataTest"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="goIbibo Tests">
+
+		<parameter name="fromPlaceListText" value="Mumbai" />
+		<classes>
+			<class name="com.goibibo.qa.testcases.DashboardTest">
+				<methods>
+					<include name="fromPlaceListTest" />
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+
+
+
 </suite> <!-- Suite -->
