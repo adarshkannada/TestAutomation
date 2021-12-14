@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-14T22:44:02 IST" name="Suite" finished-at="2021-12-14T22:44:08 IST" duration-ms="6677">
+  <suite started-at="2021-12-14T23:36:07 IST" name="Suite" finished-at="2021-12-14T23:36:20 IST" duration-ms="13266">
     <groups>
     </groups>
-    <test started-at="2021-12-14T22:44:02 IST" name="goIbibo Tests" finished-at="2021-12-14T22:44:08 IST" duration-ms="6677">
+    <test started-at="2021-12-14T23:36:07 IST" name="goIbibo Tests" finished-at="2021-12-14T23:36:14 IST" duration-ms="6736">
       <class name="com.goibibo.qa.testcases.DashboardTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.goibibo.qa.testcases.DashboardTest@1623134f]" started-at="2021-12-14T22:44:02 IST" name="setUp" finished-at="2021-12-14T22:44:07 IST" duration-ms="4869" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.goibibo.qa.testcases.DashboardTest@1623134f]" started-at="2021-12-14T23:36:07 IST" name="setUp" finished-at="2021-12-14T23:36:12 IST" duration-ms="4953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="fromPlaceListTest(java.lang.String)[pri:2, instance:com.goibibo.qa.testcases.DashboardTest@1623134f]" started-at="2021-12-14T22:44:07 IST" name="fromPlaceListTest" finished-at="2021-12-14T22:44:08 IST" duration-ms="1190" status="PASS">
+        <test-method signature="fromPlaceListTest(java.lang.String)[pri:2, instance:com.goibibo.qa.testcases.DashboardTest@1623134f]" started-at="2021-12-14T23:36:12 IST" name="fromPlaceListTest" finished-at="2021-12-14T23:36:13 IST" duration-ms="1182" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fromPlaceListTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goibibo.qa.testcases.DashboardTest@1623134f]" started-at="2021-12-14T22:44:08 IST" name="tearDown" finished-at="2021-12-14T22:44:08 IST" duration-ms="597" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goibibo.qa.testcases.DashboardTest@1623134f]" started-at="2021-12-14T23:36:13 IST" name="tearDown" finished-at="2021-12-14T23:36:14 IST" duration-ms="581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.goibibo.qa.testcases.DashboardTest -->
     </test> <!-- goIbibo Tests -->
+    <test started-at="2021-12-14T23:36:14 IST" name="goIbibo Tests2" finished-at="2021-12-14T23:36:20 IST" duration-ms="6515">
+      <class name="com.goibibo.qa.testcases.DashboardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.goibibo.qa.testcases.DashboardTest@3ce3db41]" started-at="2021-12-14T23:36:14 IST" name="setUp" finished-at="2021-12-14T23:36:18 IST" duration-ms="4772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fromPlaceListTest(java.lang.String)[pri:2, instance:com.goibibo.qa.testcases.DashboardTest@3ce3db41]" started-at="2021-12-14T23:36:18 IST" name="fromPlaceListTest" finished-at="2021-12-14T23:36:20 IST" duration-ms="1166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bengaluru]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromPlaceListTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.goibibo.qa.testcases.DashboardTest@3ce3db41]" started-at="2021-12-14T23:36:20 IST" name="tearDown" finished-at="2021-12-14T23:36:20 IST" duration-ms="574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.goibibo.qa.testcases.DashboardTest -->
+    </test> <!-- goIbibo Tests2 -->
   </suite> <!-- Suite -->
 </testng-results>
