@@ -61,6 +61,7 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 
 		driver.get(prop.getProperty("url"));
+	
 		Thread.sleep(2000);
 	}
 
@@ -70,7 +71,6 @@ public class TestBase {
 		try {
 			FileUtils.copyFile(src, null);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

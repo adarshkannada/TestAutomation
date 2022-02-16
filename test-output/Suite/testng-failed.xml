@@ -11,7 +11,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="fromPlaceListTest"/>
+          <include name="fromPlaceListTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.goibibo.qa.testcases.DashboardTest -->
     </classes>

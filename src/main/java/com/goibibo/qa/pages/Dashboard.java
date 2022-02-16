@@ -43,6 +43,8 @@ public class Dashboard extends TestBase{
 	@FindBy(xpath = "//div[@class='DayPicker-Week']/..//div[@class='calDate']")
 	WebElement departureDate;
 	
+	
+	
 	public Dashboard() throws IOException {
 		super();
 		PageFactory.initElements(driver, this);

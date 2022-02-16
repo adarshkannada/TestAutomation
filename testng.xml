@@ -16,21 +16,7 @@
 					<include name="fromPlaceListTest" />
 				</methods>
 			</class>
+			<class name="com.goibibo.qa.testcases.AboutUsTest"></class>
 		</classes>
 	</test> <!-- Test -->
-	
-	<test thread-count="5" name="goIbibo Tests2">
-
-		<parameter name="fromPlaceListText" value="Bengaluru" />
-		<classes>
-			<class name="com.goibibo.qa.testcases.DashboardTest">
-				<methods>
-					<include name="fromPlaceListTest" />
-				</methods>
-			</class>
-		</classes>
-	</test>
-
-
-
 </suite> <!-- Suite -->

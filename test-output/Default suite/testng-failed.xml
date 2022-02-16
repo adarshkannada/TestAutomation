@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="fromPlaceListTest"/>
+          <include name="clickAboutUsPageLinkTest"/>
         </methods>
       </class> <!-- com.goibibo.qa.testcases.DashboardTest -->
     </classes>

@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -19,37 +22,37 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import com.goibibo.qa.base.TestBase;
 
 public class TestUtil extends TestBase{
-	
+
 	public TestUtil() throws IOException {
 		super();
 	}
 
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 10;
-	
+
 	static Workbook book;
 	static Sheet sheet;
 	public static String TESTDATA_SHEET_PATH = "/home/freedom/Documents/eclipse/TestAutomation/src/main/java/com/goibibo/qa/testData/testData.xlsx";
-	
+
 	public void scrollPageDown(WebDriver driver){
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		js.executeScript("window.scrollTo(0,document.body.scrollHeight)"); 
 	}
-	
+
 	public void scrollPageUntil(WebElement element, WebDriver driver) {
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
-		
+
 	}
-	
-	
+
+
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + "Screenshot - "  + System.currentTimeMillis() + ".png"));
 	}
-	
-	
+
+
 	public static Object[][] getTestData(String sheetName) throws InvalidFormatException {
 		FileInputStream file = null;
 		try {
@@ -74,6 +77,6 @@ public class TestUtil extends TestBase{
 		}
 		return data;
 	}
-	
+
 
 }
