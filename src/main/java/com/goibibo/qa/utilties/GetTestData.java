@@ -7,7 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class XLS_Reader {
+public class GetTestData {
 	
 	FileInputStream file;
 	XSSFWorkbook workbook;
@@ -15,7 +15,7 @@ public class XLS_Reader {
 	XSSFRow row;
 	XSSFCell cell;
 	
-	public XLS_Reader(String path){
+	public GetTestData(String path){
 		
 		
 		try
@@ -23,6 +23,7 @@ public class XLS_Reader {
 		    file = new FileInputStream(path);
 			workbook = new XSSFWorkbook(file);
 			sheet = workbook.getSheetAt(0);
+			
 			file.close();
 			
 		}
@@ -54,11 +55,15 @@ public class XLS_Reader {
 				//System.out.println(celldata);
 				data[i-1][j] = celldata;
 			}
-			
+
 		}
 		
 		return data;
 	}
 	
+	public static void main(String[] args) {
+		GetTestData getTestData = new GetTestData("C:\\Project\\TestAutomation\\src\\main\\java\\com\\goibibo\\qa\\testData\\testData.xlsx");
+		getTestData.workbook.getSheet("Sheet1").getRow(1).getCell(1).getStringCellValue();
+	}
 
 }

@@ -19,12 +19,14 @@ import com.goibibo.qa.pages.AboutUs;
 import com.goibibo.qa.pages.Dashboard;
 import com.goibibo.qa.utilties.TestUtil;
 import com.goibibo.qa.utilties.VerifyBrokenLinks;
+import com.goibibo.qa.utilties.getTestData;
 
 
 public class DashboardTest extends TestBase{
 
 	Dashboard dashboard;
 	AboutUs aboutUs;
+	//getTestData testData;
 	
 	static Logger log = LogManager.getLogger(DashboardTest.class);
 	//PropertyConfigurator.configure("C:\\Project\\TestAutomation\\src\\main\\resources\\log4j.properties");
@@ -67,13 +69,7 @@ public class DashboardTest extends TestBase{
 		
 	}
 	
-	@Test(priority=2)
-	@Parameters ({"fromPlaceListText"})
-	public void fromPlaceListTest(String fromPlaceNameText) throws InterruptedException {
-		
-		dashboard.verifyFromPlace(fromPlaceNameText);
-		
-	}
+
 	
 	@Test(priority=3)
 	public void toPlaceNameTest() throws InterruptedException{
